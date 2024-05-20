@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     let fruits=["Apples","Mangoes","Bananas"];
+     document.write("list of fruits",fruits);
+     document.write( "<br>type of fruits",typeof fruits);
+     document.write( "<br> Is this an array:-",Array.isArray(fruits));
+    document.write("<br> my favorite fruit:",fruits.length);
+    document.write("<br> second position element :",fruits[1]);
+
+    fruits[3]=" Water melon ";
+    document.write("<br> MY NEW LIST :",fruits);
+
+    fruits.push("Grapes");
+    document.write("<br>MY NEW LIST :",fruits);
+
+    fruits.pop();
+    document.write("<br>deleting this grape :",fruits);
+
+    delete(fruits[2]);
+    document.write("<br> deleting the 2 nd element:-",fruits[2]);
+
+    fruits[2]="pinapple";
+    document.write("<br> new array",fruits);
+
+    const myfav=fruits.slice(2);
+    const myfav1=fruits.slice(2,3);
+    document.write("<br> fav fruit:",myfav);
+    document.write("<br> fav fruit:",myfav1);
+
+    document.write("<br> new array is :",fruits)
+
+    let a1=fruits.indexOf('Mangoes');
+    document.write("<br>position of mangoes:",fruits.indexOf("Mangoes")+1);
+
+fruits.push("Oranges");
+document.write("<br>",fruits);    
+document.write("<br>sorted list:",fruits.sort());
+
+
+  document.write("<br>reverse:",fruits.reverse());
+
+
+  myFruit=fruits.toString();
+  document.write("<br>to string:",myFruit[1]);
+
+    </script>
+    
+</body>
+</html>
